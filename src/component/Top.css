@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.title{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+}
+.moto{
+    text-align: center;
+    font-size: 12px;
+}
+@media screen and (max-width:900px) {
+    .top{
+        display: block;
+    }
+}

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(13, 8, 54);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
+}
+.logoContainer{
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.logo1{
+    background-color: black;
+    padding: 10px;
+    font-weight: 800;
+}
+.logo2{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+}
+.desktop-ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.desktop-ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desktop-ul li a:hover{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: 0.9s;
+}
+.toggle{
+    padding: 5px 10px;
+    background-color: white;
+    color:black;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin-left: 100%;
+}
+.mobile-ul{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(13, 8, 54);
+    height:0;
+    overflow: hidden;
+    width:100%;
+    display: none;
+    transition: ease-in-out 0.9s;
+}
+.mobile-ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+}
+.mobile-ul li a:hover{
+    color: rgb(13, 8, 54);
+    transition: 0.9s;
+}
+@media screen and (max-width:900px) {
+    nav{
+        height: 5vh;
+    }
+   .logoContainer{
+    display: none;
+   }
+    .desktop-ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .mobile-ul{
+        display: block;
+    }
+    .show{
+        height: 197px;
+    }
+}
